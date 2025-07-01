@@ -1,0 +1,12 @@
+{
+  "nombres": "Camila & Sebastián",
+  "fechaEvento": "2025-11-17T16:00:00",
+  "lugar": "Iglesia San Pedro, Bogotá",
+  "mapa": "https://goo.gl/maps/xxxxxx",
+  "galeria": [
+    "./img/foto1.jpg",
+    "./img/foto2.jpg",
+    "./img/foto3.jpg"
+  ],
+  "mensaje": "Estamos felices de compartir este momento contigo ❤️"
+}

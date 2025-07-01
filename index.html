@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Camila & Sebastián - Nuestra Boda</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- PORTADA -->
+  <!-- <section class="h-screen bg-cover bg-center flex flex-col items-center justify-center text-center px-4" style="background-image: url('./img/foto-portada.jpg');">
+    <h1 id="nombres" class="text-5xl md:text-7xl script-font text-white drop-shadow-lg"></h1>
+    <p class="mt-4 text-xl md:text-2xl text-white">¡Nos casamos!</p>
+    <p class="mt-2 text-white">17 de noviembre de 2025</p>
+  </section> -->
+
+  <section class="relative h-screen flex items-center justify-center text-center px-4">
+    <!-- Imagen de fondo -->
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('./img/foto-portada.jpg');"></div>
+
+    <!-- Capa negra semitransparente -->
+    <div class="absolute inset-0 bg-black opacity-60"></div>
+
+    <!-- Contenido encima -->
+    <div class="relative z-10 text-white">
+        <h1 id="nombres" class="text-5xl md:text-7xl script-font drop-shadow-lg">Camila & Sebastián</h1>
+        <p class="mt-4 text-xl md:text-2xl">¡Nos casamos!</p>
+        <p class="mt-2">17 de noviembre de 2025</p>
+    </div>
+  </section>
+
+
+  <!-- CUENTA REGRESIVA (opcional) -->
+  <section class="py-10 text-center bg-pink-50">
+    <h2 class="text-3xl font-semibold mb-4">Faltan:</h2>
+    <div id="contador" class="flex justify-center gap-4 text-2xl font-bold">
+      <div><span id="dias">00</span><p>Días</p></div>
+      <div><span id="horas">00</span><p>Horas</p></div>
+      <div><span id="minutos">00</span><p>Min</p></div>
+      <div><span id="segundos">00</span><p>Seg</p></div>
+    </div>
+  </section>
+
+  <!-- INFORMACIÓN DEL EVENTO -->
+  <section class="py-12 px-6 text-center bg-white">
+    <h2 class="text-3xl font-bold mb-4">Nuestra ceremonia</h2>
+    <p class="mb-2">17 de noviembre de 2025 - 4:00 PM</p>
+    <p id="lugar" class="mb-4"></p>
+    <a href="https://goo.gl/maps/XXXX" target="_blank" class="inline-block bg-pink-500 text-white px-6 py-2 rounded-full hover:bg-pink-600 transition">
+      Ver ubicación en Google Maps
+    </a>
+  </section>
+
+  <!-- GALERÍA DE FOTOS -->
+  <section class="py-12 bg-pink-50 px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Nuestros momentos</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
+      <img src="./img/foto1.jpg" alt="Foto 1" class="rounded-xl shadow-md">
+      <img src="./img/foto2.jpg" alt="Foto 2" class="rounded-xl shadow-md">
+      <img src="./img/foto3.jpg" alt="Foto 3" class="rounded-xl shadow-md">
+    </div>
+  </section>
+
+  <!-- MENSAJE PERSONAL -->
+  <section class="py-12 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4">Un día especial</h2>
+    <p id="mensaje" class="max-w-xl mx-auto">Estamos felices de compartir este momento con las personas que amamos. Tu presencia es muy importante para nosotros.</p>
+  </section>
+
+  <!-- CONFIRMACIÓN DE ASISTENCIA (más adelante) -->
+  <section class="py-12 bg-white text-center">
+    <h2 class="text-3xl font-bold mb-4">¿Nos acompañas?</h2>
+    <p class="mb-4">Confirma tu asistencia por WhatsApp:</p>
+    <a href="https://wa.me/573001234567?text=¡Hola! Confirmo mi asistencia a la boda de Camila y Sebastián" target="_blank" class="inline-block bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition">
+      Confirmar asistencia
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-6 bg-pink-500 text-white text-center">
+    <p class="script-font text-2xl">Camila & Sebastián</p>
+    <p class="text-sm mt-2">Con amor para siempre ❤️</p>
+  </footer>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
