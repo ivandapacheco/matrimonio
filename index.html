@@ -12,18 +12,16 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 
 </head>
 <body class="bg-white text-gray-800">
 
   <!-- PORTADA -->
-  <!-- <section class="h-screen bg-cover bg-center flex flex-col items-center justify-center text-center px-4" style="background-image: url('./img/foto-portada.jpg');">
-    <h1 id="nombres" class="text-5xl md:text-7xl script-font text-white drop-shadow-lg"></h1>
-    <p class="mt-4 text-xl md:text-2xl text-white">¡Nos casamos!</p>
-    <p class="mt-2 text-white">17 de noviembre de 2025</p>
-  </section> -->
-
   <section class="relative h-screen flex items-center justify-center text-center px-4">
     <!-- Imagen de fondo -->
     <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('./img/foto-portada.jpg');"></div>
@@ -32,7 +30,7 @@
     <div class="absolute inset-0 bg-black opacity-60"></div>
 
     <!-- Contenido encima -->
-    <div class="relative z-10 text-white">
+    <div  data-aos="flip-left" data-aos-delay="2000" class="relative z-10 text-white">
         <h1 id="nombres" class="text-5xl md:text-7xl script-font drop-shadow-lg">Camila & Sebastián</h1>
         <p class="mt-4 text-xl md:text-2xl">¡Nos casamos!</p>
         <p class="mt-2">17 de noviembre de 2025</p>
@@ -62,14 +60,39 @@
   </section>
 
   <!-- GALERÍA DE FOTOS -->
-  <section class="py-12 bg-pink-50 px-4">
+  <!-- <section class="py-12 bg-pink-50 px-4">
     <h2 class="text-3xl font-bold text-center mb-8">Nuestros momentos</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
       <img src="./img/foto1.jpg" alt="Foto 1" class="rounded-xl shadow-md">
       <img src="./img/foto2.jpg" alt="Foto 2" class="rounded-xl shadow-md">
       <img src="./img/foto3.jpg" alt="Foto 3" class="rounded-xl shadow-md">
     </div>
+  </section> -->
+  <section class="py-12 bg-pink-50 px-4">
+    <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Nuestros momentos</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
+      <img src="./img/foto1.jpg" alt="Foto 1" 
+          class="rounded-xl shadow-md"
+          data-aos="zoom-in" 
+          data-aos-delay="200"
+          data-aos-offset="100" 
+          data-aos-duration="800">
+
+      <img src="./img/foto2.jpg" alt="Foto 2" 
+          class="rounded-xl shadow-md"
+          data-aos="zoom-in" 
+          data-aos-delay="400" 
+          data-aos-duration="800">
+
+      <img src="./img/foto3.jpg" alt="Foto 3" 
+          class="rounded-xl shadow-md"
+          data-aos="zoom-in" 
+          data-aos-delay="600" 
+          data-aos-duration="800">
+    </div>
   </section>
+
 
   <!-- MENSAJE PERSONAL -->
   <section class="py-12 px-6 text-center">
@@ -86,13 +109,41 @@
     </a>
   </section>
 
+  <!-- Botón música -->
+  <div class="fixed top-4 right-4 z-50">
+    <button id="toggleMusic" class="bg-white/90 hover:bg-white text-pink-600 px-4 py-2 rounded-full shadow-md transition duration-300 flex items-center gap-2">
+      <span id="musicIcon">▶️</span>
+      <span>Reproducir música</span>
+    </button>
+  </div>
+
+
+
+  <section class="py-20">
+    <div data-aos="zoom-in" class="max-w-xl mx-auto bg-pink-100 p-6 rounded-xl shadow-xl text-center">
+      <h2 class="text-3xl font-bold">¡Nos vemos pronto!</h2>
+      <p class="mt-2">Gracias por confirmar tu asistencia.</p>
+    </div>
+  </section>
+
+
+
+
+
   <!-- FOOTER -->
   <footer class="py-6 bg-pink-500 text-white text-center">
     <p class="script-font text-2xl">Camila & Sebastián</p>
     <p class="text-sm mt-2">Con amor para siempre ❤️</p>
   </footer>
 
+
   <script src="index.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 
 </body>
 </html>
