@@ -17,6 +17,8 @@
   <!-- AOS CSS -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 <body class="bg-white text-gray-800">
@@ -47,6 +49,8 @@
       <div><span id="minutos">00</span><p>Min</p></div>
       <div><span id="segundos">00</span><p>Seg</p></div>
     </div>
+    <i class="fas fa-heart text-red-500 text-3xl"></i>
+
   </section>
 
   <!-- INFORMACIÓN DEL EVENTO -->
@@ -60,14 +64,6 @@
   </section>
 
   <!-- GALERÍA DE FOTOS -->
-  <!-- <section class="py-12 bg-pink-50 px-4">
-    <h2 class="text-3xl font-bold text-center mb-8">Nuestros momentos</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
-      <img src="./img/foto1.jpg" alt="Foto 1" class="rounded-xl shadow-md">
-      <img src="./img/foto2.jpg" alt="Foto 2" class="rounded-xl shadow-md">
-      <img src="./img/foto3.jpg" alt="Foto 3" class="rounded-xl shadow-md">
-    </div>
-  </section> -->
   <section class="py-12 bg-pink-50 px-4">
     <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Nuestros momentos</h2>
     
@@ -100,7 +96,7 @@
     <p id="mensaje" class="max-w-xl mx-auto">Estamos felices de compartir este momento con las personas que amamos. Tu presencia es muy importante para nosotros.</p>
   </section>
 
-  <!-- CONFIRMACIÓN DE ASISTENCIA (más adelante) -->
+  <!-- CONFIRMACIÓN DE ASISTENCIA -->
   <section class="py-12 bg-white text-center">
     <h2 class="text-3xl font-bold mb-4">¿Nos acompañas?</h2>
     <p class="mb-4">Confirma tu asistencia por WhatsApp:</p>
@@ -110,12 +106,22 @@
   </section>
 
   <!-- Botón música -->
+   <!-- Botón música -->
   <div class="fixed top-4 right-4 z-50">
+    <button id="toggleMusic" class="bg-white/90 hover:bg-white text-pink-600 px-4 py-2 rounded-full shadow-md transition duration-300 flex items-center gap-2">
+      <!-- <i id="musicIcon" class="fas fa-play"></i> -->
+       <i id="musicIcon" class="fa-solid fa-circle-play"></i>
+      <span>Reproducir música</span>
+    </button>
+  </div>
+
+  <!-- <div class="fixed top-4 right-4 z-50">
     <button id="toggleMusic" class="bg-white/90 hover:bg-white text-pink-600 px-4 py-2 rounded-full shadow-md transition duration-300 flex items-center gap-2">
       <span id="musicIcon">▶️</span>
       <span>Reproducir música</span>
     </button>
-  </div>
+  </div> -->
+
 
 
 

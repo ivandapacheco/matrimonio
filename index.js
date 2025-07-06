@@ -1,6 +1,29 @@
 // ===============================
 // 🎵 Configuración de audio
 // ===============================
+// const audio = new Audio('./audio/cancion.mp3');
+// audio.loop = true;
+
+// const btnMusic = document.getElementById('toggleMusic');
+// const iconMusic = document.getElementById('musicIcon');
+// let isPlaying = false;
+
+// btnMusic.addEventListener('click', () => {
+//   if (!isPlaying) {
+//     audio.play();
+//     iconMusic.textContent = '⏸️';
+//     iconMusic.classList.add('spin');
+//     btnMusic.querySelector('span:last-child').textContent = 'Pausar música';
+//     isPlaying = true;
+//   } else {
+//     audio.pause();
+//     iconMusic.textContent = '▶️';
+//     iconMusic.classList.remove('spin');
+//     btnMusic.querySelector('span:last-child').textContent = 'Reproducir música';
+//     isPlaying = false;
+//   }
+// });
+
 const audio = new Audio('./audio/cancion.mp3');
 audio.loop = true;
 
@@ -11,18 +34,19 @@ let isPlaying = false;
 btnMusic.addEventListener('click', () => {
   if (!isPlaying) {
     audio.play();
-    iconMusic.textContent = '⏸️';
-    iconMusic.classList.add('spin');
+    iconMusic.classList.remove('fa-play');
+    iconMusic.classList.add('fa-pause', 'spin'); // 🎵 también le dejamos la clase spin si quieres
     btnMusic.querySelector('span:last-child').textContent = 'Pausar música';
     isPlaying = true;
   } else {
     audio.pause();
-    iconMusic.textContent = '▶️';
-    iconMusic.classList.remove('spin');
+    iconMusic.classList.remove('fa-pause', 'spin');
+    iconMusic.classList.add('fa-play');
     btnMusic.querySelector('span:last-child').textContent = 'Reproducir música';
     isPlaying = false;
   }
 });
+
 
 
 // ===============================
